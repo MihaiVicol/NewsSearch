@@ -35,7 +35,7 @@ searchBtn2.onclick = () => {
 
 async function populate1() {
     let arrayT = keyWord.value.split(" ");
-    let url = "http://localhost:8080/top/";
+    let url = "https://sd-project-40ct.onrender.com/top/";
     for(var i = 0 ; i < arrayT.length; i++){
         if(i != arrayT.length - 1 ) 
             url = url + arrayT[i] + "-";
@@ -50,7 +50,7 @@ async function populate1() {
 
 async function populate2() {
 
-    let url = "http://localhost:8080/top/";
+    let url = "https://sd-project-40ct.onrender.com/top/";
     url = url + country.value + "/" + topic.value;
     console.log(url);
     finalUrl = url;
